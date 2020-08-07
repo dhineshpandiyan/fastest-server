@@ -1,0 +1,32 @@
+{
+  "name": "fastest-server",
+  "version": "1.0.0",
+  "description": "Used to get the fastest server from the list",
+  "main": "lib.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dhineshpandiyan/fastest-server.git"
+  },
+  "author": "Dhinesh Pandiyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhineshpandiyan/fastest-server/issues"
+  },
+  "homepage": "https://github.com/dhineshpandiyan/fastest-server#readme",
+  "dependencies": {
+    "raw-socket": "^1.7.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.1.1"
+  },
+  "keywords": [
+    "fastest server",
+    "nearest server",
+    "icmp",
+    "internet control message protocol",
+    "ping"
+  ]
+}

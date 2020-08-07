@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - 'node'
+services:
+  - docker
+jobs:
+  include:
+    - stage: test
+      script:
+        - npm install
+        - npm test
