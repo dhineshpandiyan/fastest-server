@@ -1,9 +1,9 @@
 # fastest-server
 
-[![Build Status](https://travis-ci.com/dhinesh-orgnization/fastest-server.svg?branch=master)](https://travis-ci.com/dhinesh-orgnization/fastest-server)
-[![Dependency Status](https://david-dm.org/dhinesh-orgnization/fastest-server.svg?style=flat-square)](https://david-dm.org/dhinesh-orgnization/fastest-server)
+[![Build Status](https://travis-ci.com/dhineshpandiyan/fastest-server.svg?branch=master)](https://travis-ci.com/dhineshpandiyan/fastest-server)
+[![Dependency Status](https://david-dm.org/dhineshpandiyan/fastest-server.svg?style=flat-square)](https://david-dm.org/dhineshpandiyan/fastest-server)
 
-Library used to get fastest server using ICMP protocal.
+Library used to get fastest server using ICMP (Internet Control Message Protocol).
 
 ## Table of Contents
 
@@ -11,7 +11,6 @@ Library used to get fastest server using ICMP protocal.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Methods Exposed](#methods-exposed)
-- [References](#references)
 
 ## About
 
@@ -42,7 +41,7 @@ const { fastest, stats } = await FastestServer.get(['172.217.19.14', 'google.com
 
 ## Methods Exposed
 
-### (static) FastestServer.get(hosts: Array<String>, [timeout: number]): Promise<{ fastest: string, stats: Array<{host:string, response: string, timeElapsed: numer}>}>
+### (*static*) FastestServer.get( hosts: *Array< String >*, [timeout: *number*]): *Promise*<{ fastest: *string*, stats: *Array<{* host: *string*, response: *string* , timeElapsed: *numer* }>}>
 
 ```javascript
 const { fastest, stats } = await FastestServer.get(['172.217.19.14', 'google.com'], 5000);
@@ -54,3 +53,7 @@ console.log(stats);
 //   { host: 'google.com', response: 'REPLY', timeElapsed: 2 }
 // ]
 ```
+
+> `response` will be one of the value from array: `['REPLY', 'NA',  'DESTINATION_UNREACHABLE', 'SOURCE_QUENCH', 'REDIRECT', 'Unknown']`
+
+> `timeElapsed` will be in milliseconds (`ms`)

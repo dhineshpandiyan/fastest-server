@@ -1,8 +1,7 @@
+os: windows
 language: node_js
 node_js:
   - 'node'
-services:
-  - docker
 jobs:
   include:
     - stage: test
