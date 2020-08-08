@@ -35,7 +35,7 @@ class FastestServer {
 			});
 			socket.on('message', (buffer) => {
 				const type = buffer.readUInt8(20);
-				const response = RESPONSE_TYPE[type] || 'Unknown';
+				const response = RESPONSE_TYPE[type] || 'UNKNOWN';
 				
 				if (!type) {
 					resolve({ host, response, timeElapsed: Date.now() - start });

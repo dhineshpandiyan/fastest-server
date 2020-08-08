@@ -1,7 +1,8 @@
 # fastest-server
 
 [![Build Status](https://travis-ci.com/dhineshpandiyan/fastest-server.svg?branch=master)](https://travis-ci.com/dhineshpandiyan/fastest-server)
-[![Dependency Status](https://david-dm.org/dhineshpandiyan/fastest-server.svg?style=flat-square)](https://david-dm.org/dhineshpandiyan/fastest-server)
+[![Dependency Status](https://david-dm.org/dhineshpandiyan/fastest-server.svg)](https://david-dm.org/dhineshpandiyan/fastest-server)
+[![npm](https://img.shields.io/npm/v/fastest-server)](https://www.npmjs.com/package/fastest-server)
 
 Library used to get fastest server using ICMP (Internet Control Message Protocol).
 
@@ -54,6 +55,6 @@ console.log(stats);
 // ]
 ```
 
-> `response` will be one of the value from array: `['REPLY', 'NA',  'DESTINATION_UNREACHABLE', 'SOURCE_QUENCH', 'REDIRECT', 'Unknown']`
+> `response` will be one of the value from array: `['REPLY', 'NA',  'DESTINATION_UNREACHABLE', 'SOURCE_QUENCH', 'REDIRECT', 'UNKNOWN']`
 
 > `timeElapsed` will be in milliseconds (`ms`)
