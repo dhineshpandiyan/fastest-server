@@ -1,6 +1,6 @@
 {
   "name": "fastest-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Used to get the fastest server from the list",
   "main": "lib.js",
   "scripts": {
